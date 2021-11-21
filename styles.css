@@ -1,0 +1,28 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    padding-top:5rem;
+}
+
+.form{
+    display:flex;
+    width:85%;
+    margin:0 auto;
+}
+.sign-up-form{
+    padding:2em 5em;
+
+}
+.sign-up-form input {
+    display:block;
+}
+
+.line-container{
+    display:flex;
+    justify-content:space-between;
+}
