@@ -6,61 +6,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Serif&display=swap" rel="stylesheet">
     <title>Simple Form</title>
 </head>
 
 <body>
-    <div class="form">
+    <div class="container">
         <div class="img">
-            <img src="" alt="random image">
         </div>
-        <div class="sign-up-form">
+        <div class="form">
+            <h1 class="form-title">Sign up</h1>
             <form action="#">
-                <h1>Sign Up</h1>
-                <div class="line-container">
-                    <div class="first-name">
-                        <label for="first-name-input">first name</label>
-                        <input type="text" ,id="first-name-input">
-                    </div>
-                    <div class="last-name">
-                        <label for="last-name-input">last name</label>
-                        <input type="text" ,id="last-name-input">
-                    </div>
-                </div>
-                <div class="line-container">
-                    <div class="phone">
-                        <label for="phone-input">phone</label>
-                        <input type="text" ,id="phone-input">
-                    </div>
-                    <div class="email">
-                        <label for="email-input">Email</label>
-                        <input type="email" ,id="email-input">
-                    </div>
-                </div>
-                <div class="line-container">
+                <div class="flex-container">
+                    <div class="col-left">
+                        <div class="input-box">
+                            <label for="fs-name">first name</label>
+                            <input type="text" id="fs-name" required placeholder="Jason">
+                        </div>
+                        <div class="input-box">
+                            <label for="phone">phone</label>
+                            <input type="text" id="phone" required placeholder="789-456-4354">
+                        </div>
+                        <div class="input-box">
+                            <label for="password">password</label>
+                            <input type="password" id="password" required>
+                        </div>
 
-                    <div class="password">
-                        <label for="password-input">password</label>
-                        <input type="password" ,id="password-input">
                     </div>
-                    <div class="confirm-password">
-                        <label for="confirm-password-input">confirm-password</label>
-                        <input type="password" ,id="confirm-password-input">
-                    </div>
-                </div>
+                    <div class="col-right">
+                        <div class="input-box">
+                            <label for="ls-name">last name</label>
+                            <input type="text" id="ls-name" required placeholder="Doe">
+                        </div>
+                        <div class="input-box">
+                            <label for="email">email</label>
+                            <input type="email" id="email" required placeholder="JasonDoe@gmail.com">
+                        </div>
+                        <div class="input-box">
+                            <label for="confirm-password">confirm password</label>
+                            <input type="text" id="confirm-password">
+                        </div>
 
-                <div class="line-container">
-                    <div class="terms">
-                        <input type="checkbox" name="terms" id="terms">
-                        <span>I accept terms and conditions</span>
                     </div>
-                    <div class="news">
-                        <input type="checkbox" name="news" id="news">
+
+                </div>
+                <div class="flex-container">
+                    <div class="checkbox">
+                        <input type="checkbox" id="terms">
+
+                        <span>I agree to terms and conditions</span>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="news">
                         <span>I want to receive news</span>
                     </div>
                 </div>
-                <button type="submit">Sign Up</button>
+                <input class="btn" type="submit" value="Sign up">
             </form>
+
         </div>
     </div>
 </body>
